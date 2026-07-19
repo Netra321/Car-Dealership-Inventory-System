@@ -19,7 +19,6 @@ class Vehicle(SQLModel, table=True):
 
 SQLModel.metadata.create_all(engine)
 
-
 @app.get("/")
 def home():
     return {"message": "Car Dealership Inventory API is running!"}
